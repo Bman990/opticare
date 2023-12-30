@@ -1,0 +1,58 @@
+
+
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(70, 54, 34); */
+    height: 25em;
+    width: 75%;
+    /* border: 1px solid white;
+    border-radius: 10px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.5s, background-color 0.8s;
+}
+
+.boxContainer:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #f0a377;
+}
+
+.boxSvgDiv {
+    margin-top:1.5em;
+    /* background-color: chocolate; */
+}
+
+.svgIcon {
+    width: 4.5em;
+    height: 4.5em;
+    fill: white;
+}
+
+.boxHeadingDiv {
+    margin: 0;
+}
+
+.boxHeadingDiv > h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+.boxDetailsDiv {
+    margin: 0;
+    /* background-color: aquamarine; */
+    width: 90%;
+    height: 90%;
+    /* background-color: darkgreen; */
+}
+
+.boxDetailsDiv > p {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 300;
+    color: white;
+}

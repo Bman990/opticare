@@ -1,0 +1,62 @@
+.reviewContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E59464;
+  }
+  
+  .reviewContent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .reviewLeft {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .reviewLTextDiv {
+    margin-bottom: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reviewHeadText{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    color: white;
+  }
+
+  .reviewDetailText{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 65%;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+  }
+
+  .linkBtn {
+    background-color: white;
+    color: #E59464;
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    text-decoration: none;
+  }
+  
+  .linkBtn:hover{
+    background-color: #f0a377;
+    color: white;
+  }
+
+  .reviewRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%; 
+  }
+  

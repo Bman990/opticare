@@ -1,0 +1,48 @@
+
+
+.aboutUsContainer {
+    height: max-content;
+    background-color:#E59464; 
+}
+
+.aboutUsContent {
+    height: max-content;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionHeader > h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.sectionHeader > h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 5em;
+    color: white;
+}
+
+.cardGridContainer {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.cardGridDiv {
+    width: 75%;
+    height: max-content;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2); 
+    gap: 2em;
+}
