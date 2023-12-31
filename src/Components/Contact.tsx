@@ -211,7 +211,6 @@ export const Contact: React.FC = () => {
               name='details'
               value={formData.details}
               onChange={handleChange}
-              required
             />
 
             <div className='buttonDiv'>
