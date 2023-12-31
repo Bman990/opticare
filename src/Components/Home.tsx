@@ -1,4 +1,5 @@
 import { AboutUs } from "./AboutUs";
+import { Footer } from "./Footer";
 import {Hero} from "./Hero";
 import { Navbar } from "./Navbar";
 import { Reviews } from "./Reviews";
@@ -12,6 +13,7 @@ export default function Home(){
             <Hero />
             <AboutUs />
             <Reviews />
+            <Footer />
         </div>
     )
 }

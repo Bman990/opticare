@@ -4,6 +4,7 @@
     border-radius: 20px;
     margin-bottom: 1.5em;
     border: solid 1px white;
+    transition: background-color 0.3s;
   }
 
   .cardContainer:hover{

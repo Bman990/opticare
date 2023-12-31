@@ -1,0 +1,144 @@
+body {
+    background-color: #E59464;
+    margin: 0;
+}
+
+.contactContainer {
+    width: 100vw;
+    height: max-content;
+}
+
+.contactContent {
+    width: 100%;
+    height: 100%;
+}
+
+.contactHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+.contactHeader > h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactHeader > p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}   
+
+.formContainer {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer > form {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstLastDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label1Style{
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.inputStyle {
+    font-size: 1.1em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactLabel {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.selectStyle {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.optionStyle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.businessStyle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.businessOption {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+    color: white;
+}   
+
+.detailsStyle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-top: 0.3em;
+    color: white;
+}
+
+.detailsText {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    resize:none;
+    max-width: 100%;
+    padding-bottom: 2em;
+}
+
+.buttonDiv {
+    margin-top: 1em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitBtn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: white;
+    background-color:transparent;
+    border: none;
+    transition: background-color 0.3s;
+
+}
+
+.submitBtn:hover {
+    background-color: #ffb991;
+    cursor: pointer;
+}

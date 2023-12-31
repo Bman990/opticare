@@ -1,0 +1,28 @@
+.footerContainer {
+    background-color: #E59464; 
+    position: relative;
+    bottom: 0;
+  }
+  
+  .footerContent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .copyRightDiv {
+    margin: 0;
+    position: relative;
+  }
+  
+  .copyRightDiv {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .copyRightDiv > p {
+    color: white;
+  }
