@@ -1,116 +1,4 @@
-// import '/StyleSheet/Contact.css'
-// import React, { useState } from 'react';
 
-
-// export const Contact: React.FC = () => {
-//     const [formData, setFormData] = useState({
-//         firstName: '',
-//         lastName: '',
-//         email: '',
-//         telephone: '',
-//       });
-    
-//   return (
-//     <div className='contactContainer'>
-//         <div className='contactContent'>
-
-//             <div className='contactHeader'>
-//                 <h1>We're Listening - Tell Us About Your Business</h1>
-//                 <p>Fill out the form below</p>
-//             </div>
-
-//             <div className='formContainer'>
-//                 <form>
-
-//                     <label htmlFor='firstName'>
-//                         First Name
-//                         <input type='text' id='firstName' />
-//                     </label>
-
-//                     <label htmlFor='lastName'>
-//                         Last Name
-//                         <input type='text' id='lastName'/>
-//                     </label>
-
-//                     <label htmlFor='email'>
-//                         Email
-//                         <input type='email' id='email'/>
-//                     </label>
-
-//                     <label htmlFor='telephone'>
-//                         Telephone
-//                         <input type='tel' id='telephone'/>
-//                     </label>
-
-//                     <label htmlFor="dropdown">How should we contact you?</label>
-//                     <select
-//                     id="dropdown"
-//                     name="selectedOption"
-//                     required
-//                     >
-//                     <option disabled>Please select</option>
-//                     <option value="option1">Email</option>
-//                     <option value="option2">Phone</option>
-//                     <option value="option3">LinkedIn</option>
-//                     </select>
-
-//                     <label>
-//                         Which best describes your business?
-//                     </label>
-
-//                     <label>
-//                         <input
-//                         type="checkbox"
-//                         name="isChecked"
-//                         />
-//                         E-Commerce
-//                     </label>
-
-//                     <label>
-//                         <input
-//                         type="checkbox"
-//                         name="isChecked"
-//                         />
-//                         IT / Tech
-//                     </label>
-
-//                     <label>
-//                         <input
-//                         type="checkbox"
-//                         name="isChecked"
-//                         />
-//                         Health & Wellness
-//                     </label>
-
-//                     <label>
-//                         <input
-//                         type="checkbox"
-//                         name="isChecked"
-//                         />
-//                         Clothing
-//                     </label>
-
-//                     <label>
-//                         <input
-//                         type="checkbox"
-//                         name="isChecked"
-//                         />
-//                         Other
-//                     </label>
-
-//                     <label>
-//                         What are some details we should know?
-//                     </label>
-
-//                     <input type='text' />
-
-//                     <button>Submit</button>
-//                 </form>
-//             </div>
-//         </div>
-//     </div>
-//   );
-// };
 
 import React, { useState } from 'react';
 import '/StyleSheet/Contact.css';
@@ -140,18 +28,20 @@ export const Contact: React.FC = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
   ) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type} = e.target;
 
     if (type === 'checkbox') {
-      const updatedBusinessDescription = [...formData.businessDescription];
-      if (checked) {
-        updatedBusinessDescription.push(value);
-      } else {
-        const index = updatedBusinessDescription.indexOf(value);
-        if (index !== -1) {
-          updatedBusinessDescription.splice(index, 1);
+        const inputElement = e.target as HTMLInputElement;
+        const updatedBusinessDescription = [...formData.businessDescription];
+    
+        if (inputElement.checked) {
+          updatedBusinessDescription.push(value);
+        } else {
+          const index = updatedBusinessDescription.indexOf(value);
+          if (index !== -1) {
+            updatedBusinessDescription.splice(index, 1);
+          }
         }
-      }
 
       setFormData((prevData) => ({
         ...prevData,
