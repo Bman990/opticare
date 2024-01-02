@@ -90,6 +90,7 @@ export const Contact: React.FC = () => {
                 type='text'
                 id='firstName'
                 name='firstName'
+                required
                 value={formData.firstName}
                 onChange={handleChange}
               />
@@ -102,6 +103,7 @@ export const Contact: React.FC = () => {
                 type='text'
                 id='lastName'
                 name='lastName'
+                required
                 value={formData.lastName}
                 onChange={handleChange}
               />
@@ -115,6 +117,7 @@ export const Contact: React.FC = () => {
                 type='email'
                 id='email'
                 name='email'
+                required
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -127,6 +130,7 @@ export const Contact: React.FC = () => {
                 type='tel'
                 id='telephone'
                 name='telephone'
+                required
                 value={formData.telephone}
                 onChange={handleChange}
               />
