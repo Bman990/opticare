@@ -1,0 +1,26 @@
+
+
+.nav2Div {
+    margin-top: 1em;
+    margin-left: 1em;
+    width: max-content;
+}
+
+.backHomeLink {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.backHomeLink:hover{
+    color: rgb(230, 230, 230);
+}
+
+.arrowSvg {
+    width: 1.1em;
+    height: 1.1em;
+}

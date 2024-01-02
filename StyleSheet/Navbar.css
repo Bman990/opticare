@@ -7,13 +7,52 @@
     left: 0;
     right: 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .navCompanyName{
-    
+     margin-left:1em ;
 }
 
 .navUL {
     display: flex;
+    list-style: none;
+}
+
+.navUL > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.btnStyle {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.btnStyle:hover {
+    background-color: #f7a97d;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.linkContact {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;    
+    font-size: 1.1em;
+}
+
+.linkContact:hover{
+    background-color: #f7a97d;
+    cursor: pointer;
+    border-radius: 5px;
 }

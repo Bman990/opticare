@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export const Reviews: React.FC = () => {
     return (
-        <section className="reviewContainer">
+        <section className="reviewContainer" id="testimonials">
             <div className="reviewContent">
 
                 <div className="reviewLeft">

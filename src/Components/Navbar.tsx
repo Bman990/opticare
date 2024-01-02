@@ -1,25 +1,34 @@
 
+import { Link } from 'react-router-dom'
 import '/StyleSheet/Navbar.css'
 
 export const Navbar: React.FC = () => {
+
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return(
         <nav className="navStyle">
             <div className="navCompanyName">
-                <h1>OptiCare</h1>
+                <button className="btnStyle" onClick={() => scrollToSection('hero')}>OptiCare</button>
             </div>
 
             <ul className="navUL">
 
                 <li>
-                    <h1>What we do</h1>
+                    <button className="btnStyle" onClick={() => scrollToSection('features')}>Features</button>
                 </li>
 
                 <li>
-                    <h1>Pricing</h1>
+                    <button className="btnStyle" onClick={() => scrollToSection('testimonials')}>Testimonals</button>
                 </li>
 
                 <li>
-                    <h1>Contact Us</h1>
+                    <Link to='/opticare/contact' className='linkContact'>Consultation</Link>
                 </li>
             </ul>
         </nav>

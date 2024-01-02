@@ -11,7 +11,7 @@ import Telephone from './Telephone'
 
 export const AboutUs: React.FC = () => {
     return (
-        <section className='aboutUsContainer'>  
+        <section className='aboutUsContainer' id="features">  
             <div className='aboutUsContent'>
 
                 <div className='sectionHeader'>

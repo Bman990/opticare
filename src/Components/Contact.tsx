@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import '/StyleSheet/Contact.css';
 import { Footer } from './Footer';
+import { Navbar2 } from './Navbar2';
 
 interface FormState {
   firstName: string;
@@ -72,6 +73,7 @@ export const Contact: React.FC = () => {
 
   return (
     <div className='contactContainer'>
+      <Navbar2 />
       <div className='contactContent'>
         <div className='contactHeader'>
           <h1>We're Listening - Tell Us About Your Business</h1>

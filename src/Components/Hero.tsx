@@ -4,7 +4,7 @@ import bg2 from '/bgVid2.mp4'
 
 export const Hero: React.FC = () => {
     return (
-      <section className="heroContainer">
+      <section className="heroContainer" id="hero">
         <div className="heroContent">
             <div className='companyNameDiv'>
                 <h1>OptiCare</h1>
