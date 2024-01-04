@@ -47,3 +47,62 @@
     font-weight: 300;
     color: white;
   }
+
+  /* Media queries for different screen sizes */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+  .cardTextDiv {
+      width: 90%;
+  }
+
+  .quotationStyle {
+      font-size: 2.5em;
+  }
+
+  .textStyle {
+      font-size: 1.2em;
+  }
+
+  .nameStyle {
+      font-size: 0.8em;
+  }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .cardTextDiv {
+    width: 90%;
+}
+
+.quotationStyle {
+    font-size: 2.5em;
+}
+
+.textStyle {
+    font-size: 1.2em;
+}
+
+.nameStyle {
+    font-size: 0.8em;
+}
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+  .cardTextDiv {
+    width: 90%;
+}
+
+.quotationStyle {
+    font-size: 2.5em;
+}
+
+.textStyle {
+    font-size: 1.2em;
+}
+
+.nameStyle {
+    font-size: 0.8em;
+}
+}

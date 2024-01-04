@@ -51,3 +51,60 @@
     font-weight: 300;
     color: white;
 }
+
+/* Media queries for different screen sizes */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    .boxContainer {
+        width: 90%;
+    }
+
+    .boxHeadingDiv > h2 {
+        font-size: 1.8em;
+    }
+
+    .boxDetailsDiv > p {
+        font-size: 1.4em;
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .boxContainer {
+        width: 90%;
+    }
+
+    .svgIcon{
+        width: 3em;
+        height: 3em;
+    }
+
+    .boxHeadingDiv > h2 {
+        font-size: 1.5em;
+    }
+
+    .boxDetailsDiv > p {
+        font-size: 1.3em;
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    .boxContainer {
+        width: 90%;
+    }
+
+    .svgIcon{
+        width: 3em;
+        height: 3em;
+    }
+
+    .boxHeadingDiv > h2 {
+        font-size: 1.8em;
+    }
+
+    .boxDetailsDiv > p {
+        font-size: 1.3em;
+    }
+}

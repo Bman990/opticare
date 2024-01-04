@@ -46,3 +46,74 @@
     grid-template-rows: repeat(2); 
     gap: 2em;
 }
+
+/* Media queries for different screen sizes */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    .sectionHeader > h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .sectionHeader > h3 {
+        font-size: 1.2em;
+        width: 80%;
+        margin-bottom: 3em;
+    }
+
+    .cardGridDiv {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .aboutUsContainer{
+        height: max-content;
+    }
+
+    .aboutUsContent{
+        height: max-content;
+    }
+
+    .sectionHeader > h1 {
+        font-size: 2.5em;
+    }
+
+    .sectionHeader > h3 {
+        font-size: 1.3em;
+        width: 70%;
+        margin-bottom: 4em;
+    }
+
+    .cardGridDiv {
+        width: 80%;
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    .aboutUsContainer{
+        height: max-content;
+    }
+
+    .aboutUsContent{
+        height: max-content;
+    }
+
+    .sectionHeader > h1 {
+        font-size: 2.5em;
+    }
+
+    .sectionHeader > h3 {
+        font-size: 1.3em;
+        width: 70%;
+        margin-bottom: 4em;
+    }
+
+    .cardGridDiv {
+        width: 80%;
+    }
+}
