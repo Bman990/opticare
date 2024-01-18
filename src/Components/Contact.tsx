@@ -57,8 +57,6 @@ export const Contact: React.FC = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
 
-    // Add your form submission logic here (e.g., send data to API)
-
     // Reset the form data
     setFormData({
       firstName: '',

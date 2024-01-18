@@ -45,6 +45,7 @@
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(2); 
     gap: 2em;
+    margin-bottom: 3em;
 }
 
 /* Media queries for different screen sizes */
