@@ -10,12 +10,14 @@
     width: 75%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     font-family: 'Roboto', sans-serif;
-    transition: box-shadow 0.5s, background-color 0.8s;
+    transition: box-shadow 0.5s, background-color 0.8s, border-radius 0.3s;
 }
 
 .boxContainer:hover{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background-color: #f0a377;
+    height: max-content;
+    border-radius: 15px;
 }
 
 .boxSvgDiv {
