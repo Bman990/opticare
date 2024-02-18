@@ -28,7 +28,6 @@
 // }
 
 // AboutUsBox.tsx
-import React, { useState } from 'react';
 import '/StyleSheet/Box.css';
 
 interface AboutUsBoxProps {
