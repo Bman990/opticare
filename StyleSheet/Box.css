@@ -20,7 +20,6 @@
 
 .boxSvgDiv {
     margin-top:1.5em;
-    /* background-color: chocolate; */
 }
 
 .svgIcon {
@@ -51,6 +50,7 @@
     font-weight: 300;
     color: white;
 }
+
 
 /* Media queries for different screen sizes */
 
